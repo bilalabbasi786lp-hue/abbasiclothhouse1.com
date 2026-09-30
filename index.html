@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Abbasi Cloth House - New arrivals, premium fabrics and stylish clothing.">
+<title>Abbasi Cloth House</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--dark:#151515;--gold:#c9a227;--cream:#f8f5ee;--white:#fff}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:var(--cream);line-height:1.5}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid #eee}
+.nav{max-width:1100px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{font-weight:800;font-size:21px;letter-spacing:.5px}.logo span{color:var(--gold)}
+nav{display:flex;gap:20px;font-size:14px;font-weight:700}
+nav a:hover{color:var(--gold)}
+.menu{display:none;background:none;border:0;font-size:25px}
+.hero{max-width:1100px;margin:auto;padding:65px 18px 55px;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.badge{display:inline-block;background:#eadfb7;color:#6d5710;padding:7px 12px;border-radius:20px;font-size:13px;font-weight:700;margin-bottom:15px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.02;margin-bottom:18px}
+.hero p{font-size:17px;color:#555;max-width:570px;margin-bottom:25px}
+.btn{display:inline-block;background:var(--dark);color:white;padding:13px 21px;border-radius:8px;font-weight:700;margin-right:8px}
+.btn.gold{background:var(--gold);color:#111}
+.hero-card{min-height:390px;border-radius:24px;background:linear-gradient(145deg,#222,#555);display:flex;align-items:end;padding:28px;color:white;box-shadow:0 18px 50px #0002}
+.hero-card div{background:#0008;padding:18px;border-radius:14px;width:100%}
+.hero-card strong{font-size:25px}
+section{max-width:1100px;margin:auto;padding:45px 18px}
+.title{text-align:center;margin-bottom:28px}.title h2{font-size:34px}.title p{color:#666}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:white;border-radius:16px;overflow:hidden;box-shadow:0 7px 25px #0000000d}
+.pic{height:220px;background:linear-gradient(135deg,#333,#aaa);display:flex;align-items:center;justify-content:center;color:white;font-size:25px;font-weight:800}
+.card:nth-child(2) .pic{background:linear-gradient(135deg,#1c2630,#9c7d56)}
+.card:nth-child(3) .pic{background:linear-gradient(135deg,#eee,#777);color:#222}
+.card:nth-child(4) .pic{background:linear-gradient(135deg,#392f2a,#c9b39b)}
+.card:nth-child(5) .pic{background:linear-gradient(135deg,#18241f,#8ca08d)}
+.card:nth-child(6) .pic{background:linear-gradient(135deg,#261c2d,#a48eb0)}
+.info{padding:17px}.info h3{font-size:19px}.info p{color:#666;font-size:14px;margin:6px 0 12px}.price{font-weight:800;color:var(--gold);font-size:18px}
+.about{background:#171717;color:white;max-width:none}.about-inner{max-width:1100px;margin:auto;padding:55px 18px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about p{color:#ccc;margin-top:12px}
+.contact-box{background:white;border-radius:18px;padding:25px;color:#222}.contact-box div{margin:10px 0}
+footer{background:#101010;color:#aaa;text-align:center;padding:25px 18px;font-size:13px}
+.float{position:fixed;right:18px;bottom:18px;background:#168a45;color:white;padding:14px 18px;border-radius:30px;font-weight:800;box-shadow:0 8px 25px #0004;z-index:30}
+@media(max-width:720px){
+ nav{display:none}.menu{display:block}
+ .hero{grid-template-columns:1fr;padding-top:40px}.hero-card{min-height:280px}
+ .grid{grid-template-columns:1fr 1fr}.pic{height:170px;font-size:20px}
+ .about-inner{grid-template-columns:1fr}
+}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.pic{height:210px}h1{font-size:43px}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a class="logo" href="#">ABBASI <span>CLOTH HOUSE</span></a>
+<nav><a href="#home">Home</a><a href="#collection">Collection</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<button class="menu" onclick="alert('Use the buttons below to browse our collection.')">☰</button>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div>
+<span class="badge">NEW WINTER ARRIVAL</span>
+<h1>Style that feels <span style="color:#c9a227">premium.</span></h1>
+<p>Welcome to Abbasi Cloth House. Discover elegant fabrics, seasonal collections and quality clothing for your everyday style.</p>
+<a class="btn gold" href="#collection">Shop Collection</a>
+<a class="btn" href="#contact">Contact Us</a>
+</div>
+<div class="hero-card">
+<div><strong>Abbasi Cloth House</strong><br>Premium fabrics • New arrivals • Classic style</div>
+</div>
+</section>
+
+<section id="collection">
+<div class="title"><h2>Featured Collection</h2><p>Explore our latest styles</p></div>
+<div class="grid">
+<article class="card"><div class="pic">PREMIUM FABRIC</div><div class="info"><h3>Premium Unstitched</h3><p>Elegant fabric for a refined look.</p><div class="price">Ask for price</div></div></article>
+<article class="card"><div class="pic">WINTER</div><div class="info"><h3>Winter Collection</h3><p>Comfortable seasonal fabrics.</p><div class="price">Ask for price</div></div></article>
+<article class="card"><div class="pic">CLASSIC</div><div class="info"><h3>Classic Collection</h3><p>Timeless colours and textures.</p><div class="price">Ask for price</div></div></article>
+<article class="card"><div class="pic">SHALWAR KAMEEZ</div><div class="info"><h3>Men's Collection</h3><p>Smart looks for every occasion.</p><div class="price">Ask for price</div></div></article>
+<article class="card"><div class="pic">NEW ARRIVAL</div><div class="info"><h3>New Arrivals</h3><p>Fresh styles added regularly.</p><div class="price">Ask for price</div></div></article>
+<article class="card"><div class="pic">SPECIAL</div><div class="info"><h3>Special Selection</h3><p>Selected fabrics for a standout look.</p><div class="price">Ask for price</div></div></article>
+</div>
+</section>
+
+<div class="about" id="about">
+<div class="about-inner">
+<div><h2>About Abbasi Cloth House</h2><p>Quality cloth, elegant designs and friendly service. Visit us for the latest collection and seasonal arrivals.</p></div>
+<div class="contact-box" id="contact">
+<h2>Contact</h2>
+<div>📍 Allah Wala Chowk, Afzal Market, Khachi Mandi</div>
+<div>📞 0303 9787836</div>
+<div>🕒 Contact us for current opening hours</div>
+</div>
+</div>
+</div>
+</main>
+
+<a class="float" href="https://wa.me/923039787836?text=Assalam-o-Alaikum%20Abbasi%20Cloth%20House%2C%20I%20want%20to%20see%20your%20latest%20collection." target="_blank">WhatsApp Order</a>
+<footer>© 2026 Abbasi Cloth House • All rights reserved</footer>
+</body>
+</html>
